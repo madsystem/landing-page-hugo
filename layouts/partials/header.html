@@ -15,10 +15,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#about">Über uns</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#services">Dienstleistungen</a>
                 </li>
                 {{ range where .Data.Pages "Section" "pricing" | first 1 }}
                     <li>
@@ -27,7 +27,7 @@
                 {{ end }}
                 {{ if isset .Site.Params "social" }}
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Kontakt</a>
                 </li>
                 {{ end }}
             </ul>
@@ -48,12 +48,8 @@
 			<div class="intro-message">
 			    <h1>{{ .Site.Title }}</h1>
 			    <h3>{{ .Site.Params.description }}</h3>
-			    <hr class="intro-divider">
-			    {{ if isset .Site.Params "social" }}
-			    <ul class="list-inline intro-social-buttons">
-				        {{ partial "social.html" . }}
-			    </ul>
-			    {{ end }}
+                <hr class="intro-divider">
+                <h4>Tausend Jahre Schlacketee Trinken</h2>
 			</div>
 		    </div>
 		</div>
